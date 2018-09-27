@@ -1,0 +1,8 @@
+[package]
+name = "rust-websocket"
+version = "0.1.0"
+authors = ["Michael Spencer <sonrisesoftware@gmail.com>"]
+
+[dependencies]
+websocket = "0.20.3"
+failure = "0.1.2"

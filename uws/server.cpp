@@ -1,0 +1,18 @@
+#include <iostream>
+#include <uWS/uWS.h>
+
+using namespace std;
+
+int main()
+{
+  uWS::Hub h;
+
+  h.onMessage([](uWS::WebSocket<uWS::SERVER> *ws, char *message, size_t length, uWS::OpCode opCode) {
+                ws->send(message, length, opCode);
+              });
+
+  if (h.listen(3000)) {
+    cout << "Listening on localhost:3000..." << endl;
+    h.run();
+  }
+}
