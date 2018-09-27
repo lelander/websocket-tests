@@ -1,0 +1,7 @@
+[package]
+name = "ws-rs"
+version = "0.1.0"
+authors = ["Michael Spencer <sonrisesoftware@gmail.com>"]
+
+[dependencies]
+ws = "0.7.8"
